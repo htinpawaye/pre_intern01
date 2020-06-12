@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Dropdown List</title>
+        <script>
+            document.addEventListener(`DOMContentLoaded`, function(){
+                document.querySelectorAll(`.color-change`).forEach(function(option){
+                    option.onclick = function(){
+                        document.querySelector(`#hello`).style.color=option.dataset.color;
+                    };
+                });
+            });
+        </script>
+    </head>
+    <body>
+        <h1 id="hello">Hello!Welcome To Our Preintern Group.</h1>
+        <select>
+            <option class="color-change" data-color="red">Red</option>
+            <option class="color-change" data-color="green">Green</option>
+            <option class="color-change" data-color="blue">Blue</option>
+            <option class="color-change" data-color="yellow">Yellow</option>
+        
+        </select>
+        
+
+    </body>
+
+</html>
