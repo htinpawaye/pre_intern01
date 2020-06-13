@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Test Dropdown List</title>
+        
+        <script>
+            function color(){
+                var color =document.getElementById('nname').value;
+               
+                document.querySelector('#hello').style.color = color;
+            }
+             
+        </script>
+    </head>
+    <body>
+        
+        <h1 id="hello">Hello!Welcome To Our Preintern Group.</h1>
+        <select id="nname" onchange="color()">
+            <option value="red">Red</option>
+            <option value="green">Green</option>
+            <option value="blue">Blue</option>
+            <option value="yellow">Yellow</option>
+          </select>
+    </body>
+
+</html>
